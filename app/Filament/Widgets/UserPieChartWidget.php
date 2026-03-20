@@ -27,7 +27,7 @@ class UserPieChartWidget extends ChartWidget
                 [
                     'label' => 'Graphique des utilisateurs',
                     'data' => $data->map(fn($value) => $value->aggregate),
-                    'backgroundColor' => ['red', 'green', 'yellow', 'indigo'],
+                    'backgroundColor' => ['red', 'green', 'blue', 'indigo'],
                     'borderWidth' => 0,
                 ],
             ],
