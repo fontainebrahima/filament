@@ -1,0 +1,386 @@
+Array
+(
+    [0] => Filament\Widgets\StatsOverviewWidget\Stat Object
+        (
+            [evaluationIdentifier:protected] => component
+            [view:protected] => filament-widgets::stats-overview-widget.stat
+            [defaultView:protected] => 
+            [viewData:protected] => Array
+                (
+                )
+
+            [viewIdentifier:protected] => schemaComponent
+            [model:protected] => 
+            [loadStateFromRelationshipsUsing:protected] => 
+            [saveRelationshipsUsing:protected] => 
+            [saveRelationshipsBeforeChildrenUsing:protected] => 
+            [shouldSaveRelationshipsWhenDisabled:protected] => 
+            [shouldSaveRelationshipsWhenHidden:protected] => 
+            [cachedConcealingComponent:protected] => 
+            [isDisabled:protected] => 
+            [isGridContainer:protected] => 
+            [isHidden:protected] => 
+            [isVisible:protected] => 1
+            [visibleJs:protected] => 
+            [hiddenJs:protected] => 
+            [isLiberatedFromContainerGrid:protected] => 
+            [cachedParentRepeater:protected] => 
+            [canGrow:protected] => 
+            [columnOrder:protected] => 
+            [componentsToPartiallyRenderAfterStateUpdated:protected] => Array
+                (
+                )
+
+            [isRenderlessAfterStateUpdated:protected] => 
+            [isPartiallyRenderedAfterStateUpdated:protected] => 
+            [pollingInterval:protected] => 
+            [columnSpan:protected] => 
+            [columnStart:protected] => 
+            [afterCloned:protected] => Array
+                (
+                )
+
+            [cachedActions:protected] => 
+            [actions:protected] => Array
+                (
+                )
+
+            [actionSchemaModel:protected] => 
+            [action:protected] => 
+            [childComponents:protected] => Array
+                (
+                )
+
+            [columns:protected] => 
+            [entryWrapperView:protected] => 
+            [extraAttributes:protected] => Array
+                (
+                )
+
+            [fieldWrapperView:protected] => 
+            [hasGap:protected] => 
+            [isDense:protected] => 
+            [id:protected] => 
+            [hasInlineLabel:protected] => 
+            [key:protected] => 
+            [cachedAbsoluteKey:protected] => 
+            [hasCachedAbsoluteKey:protected] => 
+            [cachedInheritanceKey:protected] => 
+            [hasCachedInheritanceKey:protected] => 
+            [maxWidth:protected] => 
+            [meta:protected] => Array
+                (
+                )
+
+            [afterStateHydrated:protected] => 
+            [afterStateUpdated:protected] => Array
+                (
+                )
+
+            [afterStateUpdatedJs:protected] => Array
+                (
+                )
+
+            [beforeStateDehydrated:protected] => 
+            [shouldUpdateValidatedStateAfterBeforeStateDehydratedRuns:protected] => 
+            [defaultState:protected] => 
+            [dehydrateStateUsing:protected] => 
+            [mutateDehydratedStateUsing:protected] => 
+            [mutateStateForValidationUsing:protected] => 
+            [hasDefaultState:protected] => 
+            [isDehydrated:protected] => 1
+            [isDehydratedWhenHidden:protected] => 
+            [isValidatedWhenNotDehydrated:protected] => 1
+            [statePath:protected] => 
+            [getConstantStateUsing:protected] => 
+            [hasConstantState:protected] => 
+            [separator:protected] => 
+            [isDistinctList:protected] => 
+            [stateCasts:protected] => Array
+                (
+                )
+
+            [stateBindingModifiers:protected] => 
+            [liveDebounce:protected] => 
+            [isLive:protected] => 
+            [isLiveOnBlur:protected] => 
+            [chart:protected] => Array
+                (
+                    [0] => 6
+                )
+
+            [chartColor:protected] => 
+            [icon:protected] => 
+            [descriptionIcon:protected] => Filament\Support\Icons\Heroicon Enum:string
+                (
+                    [name] => User
+                    [value] => user
+                )
+
+            [descriptionIconPosition:protected] => 
+            [descriptionColor:protected] => success
+            [value:protected] => 6
+            [shouldOpenUrlInNewTab:protected] => 
+            [url:protected] => 
+            [color:protected] => success
+            [defaultColor:protected] => 
+            [description:protected] => Nombre total d'utilisateurs
+            [isLabelHidden:protected] => 
+            [label:protected] => Utilisateur(s)
+            [shouldTranslateLabel:protected] => 
+        )
+
+    [1] => Filament\Widgets\StatsOverviewWidget\Stat Object
+        (
+            [evaluationIdentifier:protected] => component
+            [view:protected] => filament-widgets::stats-overview-widget.stat
+            [defaultView:protected] => 
+            [viewData:protected] => Array
+                (
+                )
+
+            [viewIdentifier:protected] => schemaComponent
+            [model:protected] => 
+            [loadStateFromRelationshipsUsing:protected] => 
+            [saveRelationshipsUsing:protected] => 
+            [saveRelationshipsBeforeChildrenUsing:protected] => 
+            [shouldSaveRelationshipsWhenDisabled:protected] => 
+            [shouldSaveRelationshipsWhenHidden:protected] => 
+            [cachedConcealingComponent:protected] => 
+            [isDisabled:protected] => 
+            [isGridContainer:protected] => 
+            [isHidden:protected] => 
+            [isVisible:protected] => 1
+            [visibleJs:protected] => 
+            [hiddenJs:protected] => 
+            [isLiberatedFromContainerGrid:protected] => 
+            [cachedParentRepeater:protected] => 
+            [canGrow:protected] => 
+            [columnOrder:protected] => 
+            [componentsToPartiallyRenderAfterStateUpdated:protected] => Array
+                (
+                )
+
+            [isRenderlessAfterStateUpdated:protected] => 
+            [isPartiallyRenderedAfterStateUpdated:protected] => 
+            [pollingInterval:protected] => 
+            [columnSpan:protected] => 
+            [columnStart:protected] => 
+            [afterCloned:protected] => Array
+                (
+                )
+
+            [cachedActions:protected] => 
+            [actions:protected] => Array
+                (
+                )
+
+            [actionSchemaModel:protected] => 
+            [action:protected] => 
+            [childComponents:protected] => Array
+                (
+                )
+
+            [columns:protected] => 
+            [entryWrapperView:protected] => 
+            [extraAttributes:protected] => Array
+                (
+                )
+
+            [fieldWrapperView:protected] => 
+            [hasGap:protected] => 
+            [isDense:protected] => 
+            [id:protected] => 
+            [hasInlineLabel:protected] => 
+            [key:protected] => 
+            [cachedAbsoluteKey:protected] => 
+            [hasCachedAbsoluteKey:protected] => 
+            [cachedInheritanceKey:protected] => 
+            [hasCachedInheritanceKey:protected] => 
+            [maxWidth:protected] => 
+            [meta:protected] => Array
+                (
+                )
+
+            [afterStateHydrated:protected] => 
+            [afterStateUpdated:protected] => Array
+                (
+                )
+
+            [afterStateUpdatedJs:protected] => Array
+                (
+                )
+
+            [beforeStateDehydrated:protected] => 
+            [shouldUpdateValidatedStateAfterBeforeStateDehydratedRuns:protected] => 
+            [defaultState:protected] => 
+            [dehydrateStateUsing:protected] => 
+            [mutateDehydratedStateUsing:protected] => 
+            [mutateStateForValidationUsing:protected] => 
+            [hasDefaultState:protected] => 
+            [isDehydrated:protected] => 1
+            [isDehydratedWhenHidden:protected] => 
+            [isValidatedWhenNotDehydrated:protected] => 1
+            [statePath:protected] => 
+            [getConstantStateUsing:protected] => 
+            [hasConstantState:protected] => 
+            [separator:protected] => 
+            [isDistinctList:protected] => 
+            [stateCasts:protected] => Array
+                (
+                )
+
+            [stateBindingModifiers:protected] => 
+            [liveDebounce:protected] => 
+            [isLive:protected] => 
+            [isLiveOnBlur:protected] => 
+            [chart:protected] => 
+            [chartColor:protected] => 
+            [icon:protected] => 
+            [descriptionIcon:protected] => Filament\Support\Icons\Heroicon Enum:string
+                (
+                    [name] => ShoppingBag
+                    [value] => shopping-bag
+                )
+
+            [descriptionIconPosition:protected] => 
+            [descriptionColor:protected] => 
+            [value:protected] => 11
+            [shouldOpenUrlInNewTab:protected] => 
+            [url:protected] => 
+            [color:protected] => 
+            [defaultColor:protected] => 
+            [description:protected] => Nombre total de produits
+            [isLabelHidden:protected] => 
+            [label:protected] => Product(s)
+            [shouldTranslateLabel:protected] => 
+        )
+
+    [2] => Filament\Widgets\StatsOverviewWidget\Stat Object
+        (
+            [evaluationIdentifier:protected] => component
+            [view:protected] => filament-widgets::stats-overview-widget.stat
+            [defaultView:protected] => 
+            [viewData:protected] => Array
+                (
+                )
+
+            [viewIdentifier:protected] => schemaComponent
+            [model:protected] => 
+            [loadStateFromRelationshipsUsing:protected] => 
+            [saveRelationshipsUsing:protected] => 
+            [saveRelationshipsBeforeChildrenUsing:protected] => 
+            [shouldSaveRelationshipsWhenDisabled:protected] => 
+            [shouldSaveRelationshipsWhenHidden:protected] => 
+            [cachedConcealingComponent:protected] => 
+            [isDisabled:protected] => 
+            [isGridContainer:protected] => 
+            [isHidden:protected] => 
+            [isVisible:protected] => 1
+            [visibleJs:protected] => 
+            [hiddenJs:protected] => 
+            [isLiberatedFromContainerGrid:protected] => 
+            [cachedParentRepeater:protected] => 
+            [canGrow:protected] => 
+            [columnOrder:protected] => 
+            [componentsToPartiallyRenderAfterStateUpdated:protected] => Array
+                (
+                )
+
+            [isRenderlessAfterStateUpdated:protected] => 
+            [isPartiallyRenderedAfterStateUpdated:protected] => 
+            [pollingInterval:protected] => 
+            [columnSpan:protected] => 
+            [columnStart:protected] => 
+            [afterCloned:protected] => Array
+                (
+                )
+
+            [cachedActions:protected] => 
+            [actions:protected] => Array
+                (
+                )
+
+            [actionSchemaModel:protected] => 
+            [action:protected] => 
+            [childComponents:protected] => Array
+                (
+                )
+
+            [columns:protected] => 
+            [entryWrapperView:protected] => 
+            [extraAttributes:protected] => Array
+                (
+                )
+
+            [fieldWrapperView:protected] => 
+            [hasGap:protected] => 
+            [isDense:protected] => 
+            [id:protected] => 
+            [hasInlineLabel:protected] => 
+            [key:protected] => 
+            [cachedAbsoluteKey:protected] => 
+            [hasCachedAbsoluteKey:protected] => 
+            [cachedInheritanceKey:protected] => 
+            [hasCachedInheritanceKey:protected] => 
+            [maxWidth:protected] => 
+            [meta:protected] => Array
+                (
+                )
+
+            [afterStateHydrated:protected] => 
+            [afterStateUpdated:protected] => Array
+                (
+                )
+
+            [afterStateUpdatedJs:protected] => Array
+                (
+                )
+
+            [beforeStateDehydrated:protected] => 
+            [shouldUpdateValidatedStateAfterBeforeStateDehydratedRuns:protected] => 
+            [defaultState:protected] => 
+            [dehydrateStateUsing:protected] => 
+            [mutateDehydratedStateUsing:protected] => 
+            [mutateStateForValidationUsing:protected] => 
+            [hasDefaultState:protected] => 
+            [isDehydrated:protected] => 1
+            [isDehydratedWhenHidden:protected] => 
+            [isValidatedWhenNotDehydrated:protected] => 1
+            [statePath:protected] => 
+            [getConstantStateUsing:protected] => 
+            [hasConstantState:protected] => 
+            [separator:protected] => 
+            [isDistinctList:protected] => 
+            [stateCasts:protected] => Array
+                (
+                )
+
+            [stateBindingModifiers:protected] => 
+            [liveDebounce:protected] => 
+            [isLive:protected] => 
+            [isLiveOnBlur:protected] => 
+            [chart:protected] => 
+            [chartColor:protected] => 
+            [icon:protected] => 
+            [descriptionIcon:protected] => Filament\Support\Icons\Heroicon Enum:string
+                (
+                    [name] => Newspaper
+                    [value] => newspaper
+                )
+
+            [descriptionIconPosition:protected] => 
+            [descriptionColor:protected] => 
+            [value:protected] => 7
+            [shouldOpenUrlInNewTab:protected] => 
+            [url:protected] => 
+            [color:protected] => 
+            [defaultColor:protected] => 
+            [description:protected] => Nombre total d'articles
+            [isLabelHidden:protected] => 
+            [label:protected] => Article(s)
+            [shouldTranslateLabel:protected] => 
+        )
+
+)
+SUCCESS
