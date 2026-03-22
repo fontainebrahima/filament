@@ -10,6 +10,7 @@ class UserChartWidget extends ChartWidget
 {
     protected ?string $heading = "Graph mensuel d'entree utilisateur";
 
+    //protected ?string $maxHeight = '270px';
     protected string $color = 'success';
 
     protected function getData(): array
@@ -37,5 +38,6 @@ class UserChartWidget extends ChartWidget
     protected function getType(): string
     {
         return 'line';
+        //return 'bar';
     }
 }
