@@ -33,7 +33,15 @@ class UserNewRegisteredWidget extends TableWidget
                         ->extraAttributes(['class'=>'py-1 text-sm']), 
                 TextColumn::make("name")->weight('bold')->searchable()->toggleable()->extraAttributes(['class'=>'py-1 text-sm']),
                 TextColumn::make("email")->color('gray')->searchable()->toggleable()->extraAttributes(['class'=>'py-1 text-sm']),
-                TextColumn::make("created_at")->searchable()->toggleable()->extraAttributes(['class'=>'py-1 text-sm'])
+                TextColumn::make("created_at")->searchable()
+                                            ->toggleable()
+                                            ->extraAttributes(['class'=>'py-1 text-sm'])
+                                            ->label("Date de creation")
+                                            ->weight("bold")
+                                            ->color("danger")
+                                            ->badge()
+                                            ->icon(Heroicon::Calendar)
+                                            ->date("d/m/Y H:m:s")
             ])->defaultSort('created_at','desc')
                 //->striped()
 
