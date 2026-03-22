@@ -21,12 +21,12 @@ class ProductsTable
     {
         return $table
             ->columns([
-                ImageColumn::make("image")->disk("public")->imageSize(30)->square()->toggleable(),
-                TextColumn::make("name")->sortable()->searchable(),
-                TextColumn::make("sku")->sortable()->badge()->color("primary")->searchable(),
-                TextColumn::make("price")->sortable(),
-                TextColumn::make("stock"),
-                IconColumn::make("is_active")->sortable()->boolean()->toggleable(isToggledHiddenByDefault:true),
+                ImageColumn::make("image")->disk("public")->imageSize(30)->square()->toggleable()->extraAttributes(['class'=>'py-1 px-1 text-sm']),
+                TextColumn::make("name")->sortable()->searchable()->extraAttributes(['class'=>'py-1 px-1 text-sm']),
+                TextColumn::make("sku")->sortable()->badge()->color("primary")->searchable()->extraAttributes(['class'=>'py-1 px-1 text-sm']),
+                TextColumn::make("price")->sortable()->toggleable(isToggledHiddenByDefault: true)->extraAttributes(['class'=>'py-1 px-1 text-sm']),
+                TextColumn::make("stock")->toggleable()->extraAttributes(['class'=>'py-1 px-1 text-sm']),
+                IconColumn::make("is_active")->sortable()->boolean()->toggleable(isToggledHiddenByDefault:true)->extraAttributes(['class'=>'py-1 px-1 text-sm']),
                 // IconColumn::make("is_featured")
                 //             ->boolean()
                 //             ->trueIcon(Heroicon::OutlinedCheckCircle)
@@ -39,7 +39,7 @@ class ProductsTable
                         ->formatStateUsing(fn(bool $state):string =>$state ? "feature" : "Pending")
                         ->icon(fn(bool $state) => $state ? Heroicon::OutlinedCheckCircle : Heroicon::OutlinedClock)
                         ->color(fn(bool $state):string =>$state ? 'success' : 'primary')
-                        ->toggleable(),
+                        ->toggleable()->extraAttributes(['class'=>'py-1 px-1 text-sm']),
                 TextColumn::make('created_at')
                     ->sortable()
                     ->label("Date de creation")
@@ -48,12 +48,12 @@ class ProductsTable
                     ->badge()
                     ->icon(Heroicon::Calendar)
                     ->date("d/m/Y H:m:s")
-                    ->toggleable()
+                    ->toggleable()->extraAttributes(['class'=>'py-1 px-1 text-sm'])
 
                 
             ])->defaultSort('created_at','desc')
                 ->striped()
-                ->extraAttributes(['class'=>'py-1 text-sm'])
+                
 
 
             ->filters([
