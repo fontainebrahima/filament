@@ -22,7 +22,7 @@ class ProductNewRegisteredWidget extends TableWidget
     public function table(Table $table): Table
     {
         return $table
-            ->query(fn (): Builder => Product::query())
+            ->query(fn (): Builder => Product::query()->latest()->take('5') )
             ->columns([
                 ImageColumn::make("image")->disk("public")->imageSize(27)->circular()->toggleable(),
                 TextColumn::make("name")->sortable()->searchable()->extraAttributes(['class'=>'py-1 text-sm'])->limit(10)->toggleable(),

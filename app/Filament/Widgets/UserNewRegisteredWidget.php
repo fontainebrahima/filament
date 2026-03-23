@@ -2,6 +2,7 @@
 
 namespace App\Filament\Widgets;
 
+use App\Models\Post;
 use App\Models\User;
 use Filament\Actions\BulkActionGroup;
 use Filament\Forms\Components\TextInput;
@@ -12,6 +13,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\Relation;
 
 class UserNewRegisteredWidget extends TableWidget
 {
@@ -19,10 +21,17 @@ class UserNewRegisteredWidget extends TableWidget
     //protected ?string $maxHeigth = "270px";
     protected int|string|array $columnSpan = "";
 
+    protected function getTableQuery(): Builder|Relation|null
+    {
+        return User::query()
+        ->latest()
+        ->limit(5);
+    }
+
     public function table(Table $table): Table
     {
         return $table
-            ->query(fn (): Builder => User::query()->take(5))
+            //->query(fn (): Builder => User::query()->latest()->take('5'))
             ->columns([
                 ImageColumn::make('image')
                         ->getStateUsing(fn ($record)=>'https://ui-avatars.com/api/?name='.urlencode($record->name) .'&background=random')
@@ -43,6 +52,7 @@ class UserNewRegisteredWidget extends TableWidget
                                             ->icon(Heroicon::Calendar)
                                             ->date("d/m/Y H:m:s")
             ])->defaultSort('created_at','desc')
+            ->paginated(5)
                 //->striped()
 
             ->filters([
