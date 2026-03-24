@@ -24,7 +24,7 @@ class ProductNewRegisteredWidget extends TableWidget
         return $table
             ->query(fn (): Builder => Product::query()->latest()->take('5') )
             ->columns([
-                ImageColumn::make("image")->disk("public")->imageSize(27)->circular()->toggleable(),
+                ImageColumn::make("image")->disk("public")->imageSize(25)->circular()->toggleable(),
                 TextColumn::make("name")->sortable()->searchable()->extraAttributes(['class'=>'py-1 text-sm'])->limit(10)->toggleable(),
                 TextColumn::make("sku")->sortable()->badge()->color("primary")->searchable()->extraAttributes(['class'=>'py-1 text-sm']),
                 TextColumn::make("price")->sortable()->toggleable(isToggledHiddenByDefault: true)->extraAttributes(['class'=>'py-1 text-sm']),

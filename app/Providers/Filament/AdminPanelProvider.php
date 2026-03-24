@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use DiogoGPinto\AuthUIEnhancer\AuthUIEnhancerPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -31,6 +32,7 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
+            ->spa()
             ->brandLogo(asset('images/logo1.png'))
             ->favicon(asset('images/logo1.png'))
             ->brandLogoHeight('2.5rem')
@@ -59,6 +61,17 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            
+            ->plugins([
+                AuthUIEnhancerPlugin::make()
+                ->showEmptyPanelOnMobile(false)
+                ->formPanelPosition('right')
+                ->formPanelWidth('40%')
+                ->emptyPanelBackgroundImageOpacity('30%')
+                ->emptyPanelBackgroundColor(Color::Gray, '900')
+                ->emptyPanelBackgroundImageUrl(asset('images/banner-66fa723b51567.png')),
+            ])
+            ->viteTheme('resources/css/filament/admin/theme.css');
     }
 }
