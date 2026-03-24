@@ -37,7 +37,10 @@ class PostForm
                                 ])->rules("required|min:8"),
                                 Select::make("category_id")
                                     ->label("Category")
-                                    ->options(Category::all()->pluck("name", "id")),
+                                    //->options(Category::all()->pluck("name", "id")),
+                                    ->relationship("category","name")
+                                    ->searchable()
+                                    ->preload(),
                                 ColorPicker::make("color"),
                             ])->columns(2),
                             MarkdownEditor::make("body"),

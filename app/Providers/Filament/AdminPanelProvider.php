@@ -69,8 +69,10 @@ class AdminPanelProvider extends PanelProvider
                 ->formPanelPosition('right')
                 ->formPanelWidth('40%')
                 ->emptyPanelBackgroundImageOpacity('30%')
-                ->emptyPanelBackgroundColor(Color::Gray, '900')
-                ->emptyPanelBackgroundImageUrl(asset('images/banner-66fa723b51567.png')),
+                ->emptyPanelBackgroundColor(Color::Gray, '950')
+                ->emptyPanelBackgroundImageUrl(asset('images/banner-66fa723b51567.png'))
+                //->emptyPanelView('filament.auth.empty-panel'),
+                ,
             ])
             ->viteTheme('resources/css/filament/admin/theme.css');
     }

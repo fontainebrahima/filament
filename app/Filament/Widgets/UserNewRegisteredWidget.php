@@ -38,7 +38,7 @@ class UserNewRegisteredWidget extends TableWidget
                         ->circular()
                         ->grow(false)
                         ->toggledHiddenByDefault(true)
-                        ->imageSize(40)
+                        ->imageSize(48)
                         ->extraAttributes(['class'=>'py-1 text-sm']),
                 TextColumn::make("name")->weight('bold')->searchable()->toggleable()->extraAttributes(['class'=>'py-1 text-sm']),
                 TextColumn::make("email")->color('gray')->searchable()->toggleable()->extraAttributes(['class'=>'py-1 text-sm']),
