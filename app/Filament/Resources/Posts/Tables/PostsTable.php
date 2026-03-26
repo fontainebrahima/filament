@@ -28,10 +28,10 @@ class PostsTable
                 TextColumn::make("id")
                 ->label("ID")
                 ->toggleable(true),
-                ImageColumn::make("image")->disk("public")->circular()->imageSize(30)->toggleable(),
+                ImageColumn::make("image")->disk("public")->circular()->imageSize(30)->toggleable(isToggledHiddenByDefault: false),
                 TextColumn::make("title")->sortable()->searchable()->toggleable(),
                 TextColumn::make("slug")->sortable()->searchable()->toggleable(),
-                TextColumn::make("category.name")->sortable()->searchable()->toggleable(),
+                TextColumn::make("category.name")->sortable()->searchable()->toggleable()->badge()->color("danger"),
                 ColorColumn::make("color")->sortable()->toggleable(isToggledHiddenByDefault: true),
                 // textColumn::make("created_at")
                 //         ->label("Created at")
