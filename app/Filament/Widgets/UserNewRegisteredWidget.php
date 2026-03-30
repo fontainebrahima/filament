@@ -38,7 +38,7 @@ class UserNewRegisteredWidget extends TableWidget
                         ->circular()
                         ->grow(false)
                         ->toggledHiddenByDefault(true)
-                        ->imageSize(48)
+                        ->imageSize(30)
                         ->extraAttributes(['class'=>'py-1 text-sm']),
                 TextColumn::make("name")->weight('bold')->searchable()->toggleable()->extraAttributes(['class'=>'py-1 text-sm']),
                 TextColumn::make("email")->color('gray')->searchable()->toggleable()->extraAttributes(['class'=>'py-1 text-sm']),
@@ -52,9 +52,8 @@ class UserNewRegisteredWidget extends TableWidget
                                             ->icon(Heroicon::Calendar)
                                             ->date("d/m/Y H:m:s")
             ])->defaultSort('created_at','desc')
-            //->paginated(5)
+            ->paginated(5)
             ->striped()
-
             ->filters([
                 //
             ])

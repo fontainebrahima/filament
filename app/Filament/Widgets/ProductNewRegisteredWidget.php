@@ -45,8 +45,10 @@ class ProductNewRegisteredWidget extends TableWidget
                     ->icon(Heroicon::Calendar)
                     ->date("d/m/Y H:m:s")
                     ->toggleable()->extraAttributes(['class'=>'py-1 text-sm'])
+                    
 
             ])->defaultSort('created_at','desc')
+            ->paginated(5)
             //->striped()
 
             ->filters([

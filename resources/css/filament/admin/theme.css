@@ -4,3 +4,41 @@
 @source '../../../../resources/views/filament/**/*';
 
 @source '../../../../vendor/diogogpinto/filament-auth-ui-enhancer/resources/**/*.blade.php';
+
+/* resources/css/filament/admin/theme.css  */
+
+/* ── Hauteur des lignes ───────────────────────── */
+.fi-ta-cell {
+    padding-top: 0.30rem !important;
+    /* défaut : 1rem */
+    padding-bottom: 0.30rem !important;
+}
+
+/* ── Taille de la police dans les cellules ───── */
+.fi-ta-cell,
+.fi-ta-text-item {
+    font-size: 0.8rem !important;
+    /* défaut : 0.875rem (sm) */
+    line-height: 1.25rem !important;
+}
+
+/* ── En-têtes de colonnes (labels) ──────────── */
+.fi-ta-header-cell {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.7rem !important;
+    font-size: 0.78rem !important;
+    /* plus petit que les données */
+    font-weight: 700 !important;
+}
+
+/* ── Badges plus compacts ───────────────────── */
+.fi-badge {
+    padding: 0.1rem 0.5rem !important;
+    font-size: 0.7rem !important;
+}
+
+/* ── Images circulaires plus petites ────────── */
+.fi-ta-image {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+}
