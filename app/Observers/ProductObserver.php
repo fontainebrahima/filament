@@ -14,6 +14,7 @@ class ProductObserver
      */
     public function created(Product $product): void
     {
+        /** @var \App\Models\User|null $recipient */
         $recipient = auth()->user();
 
         if ($recipient) {
@@ -37,13 +38,14 @@ class ProductObserver
      */
     public function updated(Product $product): void
     {
+        /** @var \App\Models\User|null $recipient */
         $recipient = auth()->user();
 
         if ($recipient) {
             Notification::make()
                 ->title("Produit modifie")
                 ->body("Un produit a été modifié avec succes")
-                ->warning()
+                ->info()
                 ->icon(Heroicon::CheckBadge)
                 ->actions([
                     Action::make('view','markAsUnread')
@@ -60,6 +62,7 @@ class ProductObserver
      */
     public function deleted(Product $product): void
     {
+        /** @var \App\Models\User|null $recipient */
         $recipient = auth()->user();
 
         if ($recipient) {
