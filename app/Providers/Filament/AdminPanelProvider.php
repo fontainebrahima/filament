@@ -74,6 +74,7 @@ class AdminPanelProvider extends PanelProvider
                 //->emptyPanelView('filament.auth.empty-panel'),
                 ,
             ])
+            ->databaseNotifications()
             ->viteTheme('resources/css/filament/admin/theme.css');
     }
 }
