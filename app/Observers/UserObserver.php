@@ -17,6 +17,7 @@ class UserObserver
      */
     public function created(User $user): void       
     {
+        /** @var \App\Models\User|null $recipient */
         $recipient = auth()->user();
 
         if ($recipient) {
