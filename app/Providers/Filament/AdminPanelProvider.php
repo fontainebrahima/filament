@@ -19,6 +19,7 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -37,6 +38,7 @@ class AdminPanelProvider extends PanelProvider
             ->favicon(asset('images/logo1.png'))
             ->brandLogoHeight('2.5rem')
             ->sidebarWidth('15rem')
+            ->sidebarCollapsibleOnDesktop()
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
@@ -64,18 +66,27 @@ class AdminPanelProvider extends PanelProvider
             ])
             
             ->plugins([
+                //AuthUIEnhancerPlugin
                 AuthUIEnhancerPlugin::make()
-                ->showEmptyPanelOnMobile(false)
-                ->formPanelPosition('right')
-                ->formPanelWidth('40%')
-                ->emptyPanelBackgroundImageOpacity('30%')
-                ->emptyPanelBackgroundColor(Color::Gray, '950')
-                ->emptyPanelBackgroundImageUrl(asset('images/banner-66fa723b51567.png'))
-                //->emptyPanelView('filament.auth.empty-panel'),
-                ,
+                    ->showEmptyPanelOnMobile(false)
+                    ->formPanelPosition('right')
+                    ->formPanelWidth('40%')
+                    ->emptyPanelBackgroundImageOpacity('30%')
+                    ->emptyPanelBackgroundColor(Color::Gray, '950')
+                    ->emptyPanelBackgroundImageUrl(asset('images/banner-66fa723b51567.png')),
+                    //->emptyPanelView('filament.auth.empty-panel'),
+
+                //FilamentEditProfilePlugin
+                FilamentEditProfilePlugin::make()
+                    ->shouldShowAvatarForm(
+                        value: true,
+                        directory: 'avatars', // image will be stored in 'storage/app/public/avatars
+                        rules: 'mimes:jpeg,png|max:1024' //only accept jpeg and png files with a maximum size of 1MB
+                    ),
             ])
             ->databaseNotifications()
             ->viteTheme('resources/css/filament/admin/theme.css')
-            ->profile();
+            //->profile()
+            ;
     }
 }
