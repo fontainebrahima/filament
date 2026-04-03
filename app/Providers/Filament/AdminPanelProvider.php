@@ -36,9 +36,9 @@ class AdminPanelProvider extends PanelProvider
             ->spa()
             ->brandLogo(asset('images/logo1.png'))
             ->favicon(asset('images/logo1.png'))
-            ->brandLogoHeight('2.5rem')
+            ->brandLogoHeight('2.4rem')
             ->sidebarWidth('15rem')
-            ->sidebarCollapsibleOnDesktop()
+            ->sidebarCollapsibleOnDesktop(true)
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
