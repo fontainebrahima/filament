@@ -10,8 +10,27 @@ class UserPieChartWidget extends ChartWidget
 {
     protected ?string $heading = 'User Pie Chart Widget';
 
-    protected ?string $maxHeight = '270px';
+    protected ?string $maxHeight = '500px';
 
+    
+
+    protected function getOptions(): array
+    {
+        return [
+            'maintainAspectRatio' => false,
+            'cutout' => '60%',
+            'animation' => [
+                'duration' => 1000,
+                'easing' => 'easeInQuad',
+            ],
+            'plugins' => [
+                'legend' => [
+                    'display' => true,
+                    'position' => 'bottom',
+                ],
+            ],
+        ];
+    }
     protected function getData(): array
     {
         $data = Trend::model(User::class)
@@ -20,14 +39,14 @@ class UserPieChartWidget extends ChartWidget
                 end: now()->endOfYear(),
                  )
                  ->perMonth()
-                 ->count();
+                 ->count(4);
 
         return [
             'datasets' => [
                 [
                     'label' => 'Graphique des utilisateurs',
                     'data' => $data->map(fn($value) => $value->aggregate),
-                    'backgroundColor' => ['red', 'green', 'blue', 'indigo'],
+                    'backgroundColor' => ['red', 'green', 'blue', 'indigo' , 'purple', 'orange', 'pink', 'brown'],
                     'borderWidth' => 0,
                 ],
             ],
@@ -42,17 +61,4 @@ class UserPieChartWidget extends ChartWidget
         //return 'polarArea';
     }
 
-    protected function getOptions(): array
-    {
-        return [
-            'maintainAspectRatio' => false,
-            'cutout' => '60%',
-            'plugins' => [
-                'legend' => [
-                    'display' => true,
-                    'position' => 'bottom',
-                ],
-            ],
-        ];
-    }
 }
