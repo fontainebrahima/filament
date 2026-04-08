@@ -18,7 +18,7 @@ class UserPieChartWidget extends ChartWidget
     {
         return [
             'maintainAspectRatio' => false,
-            'cutout' => '60%',
+            'cutout' => '75%',
             'animation' => [
                 'duration' => 1000,
                 'easing' => 'easeInQuad',
