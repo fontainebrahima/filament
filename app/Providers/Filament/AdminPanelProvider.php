@@ -30,9 +30,10 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->registration()
             ->colors([
                 'primary' => Color::Amber,
-            ])
+                ])
             ->spa()
             ->brandLogo(asset('images/logo1.png'))
             ->favicon(asset('images/logo1.png'))
@@ -73,8 +74,8 @@ class AdminPanelProvider extends PanelProvider
                     ->formPanelWidth('40%')
                     ->emptyPanelBackgroundImageOpacity('30%')
                     ->emptyPanelBackgroundColor(Color::Gray, '950')
-                    ->emptyPanelBackgroundImageUrl(asset('images/banner-66fa723b51567.png')),
-                    //->emptyPanelView('filament.auth.empty-panel'),
+                    ->emptyPanelBackgroundImageUrl(asset('images/banner-66fa723b51567.png'))
+                    ->emptyPanelView('filament.auth.empty-panel'),
 
                 //FilamentEditProfilePlugin
                 FilamentEditProfilePlugin::make()

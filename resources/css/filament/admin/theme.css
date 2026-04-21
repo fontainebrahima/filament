@@ -9,9 +9,9 @@
 
 /* ── Hauteur des lignes ───────────────────────── */
 .fi-ta-cell {
-    padding-top: 0.30rem !important;
+    padding-top: 0.40rem !important;
     /* défaut : 1rem */
-    padding-bottom: 0.30rem !important;
+    padding-bottom: 0.40rem !important;
 }
 
 /* ── Taille de la police dans les cellules ───── */
@@ -39,6 +39,6 @@
 
 /* ── Images circulaires plus petites ────────── */
 .fi-ta-image {
-    width: 1.8rem !important;
-    height: 1.8rem !important;
+    width: 1.9rem !important;
+    height: 1.9rem !important;
 }

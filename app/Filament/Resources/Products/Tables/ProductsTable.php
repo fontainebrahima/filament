@@ -21,6 +21,7 @@ class ProductsTable
     public static function configure(Table $table): Table
     {
         return $table
+        ->deferLoading()
             ->columns([
                 ImageColumn::make("image")->disk("public")->imageSize(30)->square()->toggleable(),
                 TextColumn::make("name")->sortable()->searchable()->extraAttributes(['class'=>'py-1 text-sm']),

@@ -16,6 +16,7 @@ class UsersTable
     public static function configure(Table $table): Table
     {
         return $table
+        ->deferLoading()
             ->columns([
                     ImageColumn::make('image')
                         ->getStateUsing(fn ($record)=>'https://ui-avatars.com/api/?name='.urlencode($record->name) .'&background=random')

@@ -61,6 +61,7 @@ class PostsTable
             ->defaultSort("title", "asc")
             ->striped()
             ->extraAttributes(['class'=>'py-1 text-sm'])
+            ->deferLoading()
             ->filters([
                 Filter::make("created_at")
                     ->label("date de creation")

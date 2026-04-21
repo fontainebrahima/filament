@@ -10,7 +10,7 @@ class UserPieChartWidget extends ChartWidget
 {
     protected ?string $heading = 'User Pie Chart Widget';
 
-    protected ?string $maxHeight = '500px';
+    protected ?string $maxHeight = '450px';
 
     
 
