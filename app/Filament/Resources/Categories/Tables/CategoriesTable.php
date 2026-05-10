@@ -24,7 +24,6 @@ class CategoriesTable
                 TextColumn::make("name")->searchable()->sortable()->toggleable(),
                 TextColumn::make("slug")->searchable()->sortable()->toggleable(),
             ])->striped()
-            ->reorderable()
             ->deferLoading()
             ->filters([
                 Filter::make("created_at")
